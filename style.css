@@ -1,4 +1,4 @@
-#input {
+#input, input1 {
   width: 500px;
   height: 400px;
   margin-right: 20px;
@@ -7,9 +7,10 @@
 #output, #output1 {
   width: 500px;
   height: 400px;
+  margin-right: 20px;
 }
 
-#btn, #btn1 {
+#btn, #btn1, #btn2 {
   padding: 5px 10px;
   border-radius: 10px;
   cursor: pointer;
