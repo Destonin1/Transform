@@ -10,13 +10,13 @@ function textChanger() {
     let text = inputHtml.value, output = "", i;
     if(text !== ""){
       text = text.split(/	game	|\r?\n/);
-      i = text.length - 8;
+      i = text.length - 7;
       while(i > 0) {
           output = output.concat(text[i]);
           output = output.concat(",");
-          output = output.concat(Math.round(100 * text[i+2]));
+          output = output.concat(Math.round(100 * text[i+1]));
           output = output.concat("\n");
-          i = i - 12;
+          i = i - 11;
       }
       outputHtml.value = output;
     }
