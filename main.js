@@ -16,7 +16,7 @@ function textChanger() {
           output = output.concat(",");
           output = output.concat(Math.round(100 * text[i+1]));
           output = output.concat("\n");
-          i = i - 11;
+          i = i - 13;
       }
       outputHtml.value = output;
     }
