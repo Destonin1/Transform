@@ -26,17 +26,17 @@ function textChanger1() {
     let text = inputHtml.value, output = "", i, arr = [];
     if(text !== ""){
       text = text.split(/	game	|\r?\n/);
-      i = text.length - 8;
+      i = text.length - 7;
       while(i > 0) {
           
           output = output.concat(text[i]);
           output = output.concat("\n");
-          output = output.concat(Math.round(100 * text[i+2]));
+          output = output.concat(Math.round(100 * text[i+1]));
           output = output.concat("\n");
           arr.push(output);
         output = "";
           //output = output.concat("\n");
-          i = i - 12;
+          i = i - 13;
       }
       arr.sort();
       for(i = 0; i < arr.length; i++) {
